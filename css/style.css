@@ -1,0 +1,320 @@
+/*font*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/*colors*/
+:root{
+    --primary : #1a253f;
+    --dark : #151A33;
+    --secondary : #2b55cc;
+    --info : #4d79f6;
+    --ternary : #848db3;
+    --pure : #eff2f9;
+    --fade : #7081b9;
+    --mild : #8997bd;
+    --footer : #212A4A;
+    --black : #060b1b;
+    --twitter : #4ac7ec;
+    --dribbble : #ff5da0;
+    --success : #1ecab8;
+    --danger : #f1646c;
+    --dark-blue : #28365f;
+}
+
+/*Reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'IBM plex Sans', sans-serif;
+    background: grey;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    line-height:1;
+}
+
+.container{
+    max-width:1140px;
+    margin:0 auto;
+}
+nav{
+    background: black;
+    padding:1.6rem 0;
+}
+nav .inner{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+nav .inner .logo{
+    text-transform: uppercase;
+    color: chocolate;
+    font-size:18px;
+    letter-spacing: 1px;
+    font-weight:500;
+}
+
+section.profile{
+    background: black;
+    display:flex;
+    align-items:center;
+    padding:3rem;
+    margin-top:30px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+    padding-bottom:4rem;
+}
+
+section.profile .left
+{
+    flex:2;
+    display:flex;
+    align-items:center;
+}
+
+section.profile.right{
+    flex:2;
+}
+section.profile .left h2{
+    color: chocolate;
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:1rem;
+}
+
+b.is-visible{
+    color:var(--pure);
+    font-size:15px;
+}
+
+section.profile .right ul{
+    color:var(--pure);
+}
+section.profile .left img{
+    width:128px;
+    height:128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.section_heading {
+    font-size: 16px;
+    font-weight: 500;
+    color:chocolate;
+    margin-bottom:2rem;
+    text-shadow: 0 0 1px rgba(130, 147, 197, 0.1);
+
+}
+section {
+padding: 3rem;
+}
+main{
+    background:var(--primary);
+}
+section.about .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16rem;
+}
+
+section.about .content p{
+    color:black;
+    font-size:14px;
+    line-height: 1.6;
+    letter-spacing:0.1px;
+    
+}
+
+section.about .content .left button{
+    background: rgba(77, 121, 246, 0.1);
+    color: black;
+    padding: 4px 8px;
+    font-size: 12px;
+    border: none;
+    line-height: 24px;
+    outline: none;
+    cursor: pointer;
+}
+
+section.about .content .right p{
+    line-height: 1.6;
+    font-size: 14px;
+    color: black;
+    letter-space: 0.1px;
+    margin-bottom: 0.1rem;
+}
+
+section.about .content .right p span:nth-child(1)
+{
+    width:130px;
+    float: left;
+    font-weight: 500;
+    padding-right: 10px;
+    display:block;
+    position:relative;
+}
+
+section.about .content .right p span:nth-child(2)
+{
+    padding-left:150px;
+    display:block;
+}
+
+section.about .content .right p span:nth-child(1):after
+{
+    content:":";
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.section_heading {
+    font-size: 16px;
+    font-weight: 500;
+    color:moccasin;
+    margin-bottom:2rem;
+    text-shadow: 0 0 1px rgba(130, 147, 197, 0.1);
+
+}
+section {
+padding: 3rem;
+}
+main{
+    background: darkgoldenrod;
+}
+section.skills .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16rem;
+}
+
+section.skills .content p{
+    color:black;
+    font-size:14px;
+    line-height: 1.6;
+    letter-spacing:0.1px;
+    
+}
+
+section.skills .content .left button{
+    background: rgba(77, 121, 246, 0.1);
+    color: var(--info);
+    padding: 4px 8px;
+    font-size: 12px;
+    border: none;
+    line-height: 24px;
+    outline: none;
+    cursor: pointer;
+}
+
+section.skills .content .right p{
+    line-height: 1.6;
+    font-size: 14px;
+    color: black;
+    letter-space: 0.1px;
+    margin-bottom: 0.1rem;
+}
+
+section.skills .content .right p span:nth-child(1)
+{
+    width:130px;
+    float: left;
+    font-weight: 5000;
+    padding-right: 10px;
+    display:block;
+    position:relative;
+}
+
+section.skills .content .right p span:nth-child(2)
+{
+    padding-left:150px;
+    display:block;
+}
+
+section.skills .content .right p span:nth-child(1):after
+{
+    content:":";
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+section.projects .content .left h2{
+    color:moccasin;
+    line-height:1.6;
+    letter-space:0.1px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+section.projects .content .left p{
+    color:black;
+    font-size:14px;
+    line-height: 1.6;
+    letter-spacing:0.1px;
+}
+
+section.projects .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16rem;
+}
+
+section.projects .content .right h2{
+    color:moccasin;
+    line-height:1.6;
+    letter-space:0.1px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+section.projects .content .right p{
+    color:black;
+    font-size:14px;
+    line-height: 1.6;
+    letter-spacing:0.1px;
+}
+
+
+section.Extra .content .left h2{
+    color:moccasin;
+    line-height:1.6;
+    letter-space:0.1px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+section.Extra .content .left p{
+    color:var(--black);
+    font-size:14px;
+    line-height: 1.6;
+    letter-spacing:0.1px;
+}
+
+section.Extra .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16rem;
+}
+
+section.Extra .content .right h2{
+    color:moccasin;
+    line-height:1.6;
+    letter-space:0.1px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+section.Extra .content .right p{
+    color:black;
+    font-size:14px;
+    line-height: 1.6;
+    letter-spacing:0.1px;
+}
+
+
+
+
