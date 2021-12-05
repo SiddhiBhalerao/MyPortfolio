@@ -11,7 +11,7 @@ Technology Used: HTML & CSS only
 Tools used: VSCode studio, Google chrome, Windows OS
 
 Hosting: Using github
-Link: https://rythmaryan.github.io/MyResume/
+Link: //siddhibhalerao.github.io/MyPortfolio/
 
 <html> tag contains two sections:
 
@@ -22,7 +22,7 @@ Link: https://rythmaryan.github.io/MyResume/
 
 	1. Title
 	2. Meta 
-                      3. Link
+        3. Link
 	4. Style (In-page CSS)
 
 <body> tag contains one section:
